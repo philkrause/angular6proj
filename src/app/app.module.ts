@@ -9,6 +9,7 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
