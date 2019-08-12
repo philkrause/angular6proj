@@ -15,7 +15,7 @@ user$: object;
 
   constructor(private data: DataService, private route: ActivatedRoute) {
     console.log('constructor loaded', this),
-  this.route.params.subscribe(params => this.user$ = params.id)
+    this.route.params.subscribe(params => this.user$ = params.id)
 
 }
 
@@ -26,3 +26,4 @@ data => this.user$ = data
       )
   }
 }
+
